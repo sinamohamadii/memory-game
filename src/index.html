@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Memory Game</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="ui-container">
+        <div id="timer">Time: 60</div>
+        <div id="score">Pairs Found: 0</div>
+      </div>
+      <div id="start-screen">
+        <h2>Memory Game</h2>
+        <div>
+          Number of pairs:
+          <input type="number" id="pairs-input" value="10" min="5" max="15" />
+        </div>
+        <button id="start-button">Start Game</button>
+      </div>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
